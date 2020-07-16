@@ -1,24 +1,7 @@
 
 window.onload = function() {
-    let modal = document.getElementById('miModal');
-let flex = document.getElementById('flex');
-let abrir = document.getElementById('abrir');
-let cerrar = document.getElementById('close');
 
-abrir.addEventListener('click', function(){
-    modal.style.display = 'block';
-});
 
-cerrar.addEventListener('click', function(){
-    modal.style.display = 'none';
-});
-
-window.addEventListener('click', function(e){
-    console.log(e.target);
-    if(e.target == flex){
-        modal.style.display = 'none';
-    }
-});
    
     const delay = 1000;
 setInterval(miFuncion,delay);
@@ -31,6 +14,7 @@ function checkTime(i) {
 }
 
 
+//RELOJ
 
 function miFuncion(){
 
@@ -45,33 +29,11 @@ sec = checkTime(segundos);
 reloj.innerHTML = hora + ":" + min + ":" + sec ;
 
   } ;
-   console.log(reloj)
-
-    
-   
-    
-    abrir.addEventListener('click', function(){
-        modal.style.display = 'block';
-    });
-    
-    cerrar.addEventListener('click', function(){
-        modal.style.display = 'none';
-    });
-    
-    window.addEventListener('click', function(e){
-        console.log(e.target);
-        if(e.target == flex){
-            modal.style.display = 'none';
-        }
-    
-        
-    });
-
-
-
-  console.log(reproductor)
-
+ 
+  
 };
+
+//NOMBRE PROGRAMACION
 var fecha =new Date().getDay();
 var hora =new Date().getHours()
 var title = document.getElementById('title');
